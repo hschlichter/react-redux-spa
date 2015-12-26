@@ -1,0 +1,11 @@
+.DS_Store
+npm-debug.log
+
+/.idea
+/node_modules
+/bower_components
+
+/.sass-cache/
+/dist/
+
+*.swp
