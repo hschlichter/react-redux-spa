@@ -3,20 +3,14 @@ import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 import configureStore from './store/configureStore';
 import reducers from './reducers';
-import App from './containers/app';
-import DevTools from './containers/devtools';
+import Root from './containers/root';
 
 require('./styles/base.scss');
 
 const store = configureStore(reducers, {});
 
 render(
-	<Provider store={store}>
-		<div>
-			<App />
-			<DevTools />
-		</div>
-	</Provider>,
+	<Root store={store} />,
 	document.getElementById('content')
 );
 

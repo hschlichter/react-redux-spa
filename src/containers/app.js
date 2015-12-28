@@ -8,6 +8,7 @@ export default class App extends Component {
 				<div className="container">
 					<p>Hello</p>
 					<p>World</p>
+					<p>Fubar</p>
 				</div>
 			</div>
 		);
