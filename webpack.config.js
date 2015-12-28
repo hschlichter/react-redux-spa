@@ -4,8 +4,15 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var entry = {
-	main: 'src/index.js',
-	vendor: ['react', 'react-dom']
+	main: [
+		'webpack-dev-server/client?http://0.0.0.0:8080',
+		'webpack/hot/only-dev-server',
+		'./src/index.js'
+	],
+	vendor: [
+		'react', 
+		'react-dom'
+	]
 };
 
 module.exports = [{
@@ -20,7 +27,7 @@ module.exports = [{
 			{
 				test: /\.js[x]?$/,
 				exclude: /node_modules/,
-				loaders: ['babel-loader']
+				loaders: ['react-hot', 'babel-loader']
 			},
 			{
 				test: /\.[s]?css$/,
@@ -37,6 +44,7 @@ module.exports = [{
 		]
 	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		//new webpack.optimize.UglifyJsPlugin({
 		//	output: {
 		//		comments: false
