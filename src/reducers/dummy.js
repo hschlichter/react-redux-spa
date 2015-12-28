@@ -1,5 +1,3 @@
-'use strict';
-
 import { ADD_DATA } from '../actions/dummy';
 
 const initialState = {
