@@ -33,6 +33,10 @@ module.exports = function (grunt) {
 		});
 	});
 
+	grunt.registerTask('clean', 'Will remove the dist folder.', function () {
+		grunt.file.delete('./dist');
+	});
+
 	grunt.registerTask('webpack', '', function () {
 	});
 

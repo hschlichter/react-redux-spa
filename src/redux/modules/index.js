@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
+
 import dummy from './dummy';
 
-const reducers = combineReducers({
+export default combineReducers({
 	dummy
 });
-
-export default reducers;
 

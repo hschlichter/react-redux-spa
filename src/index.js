@@ -1,16 +1,33 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from 'react-dom';
-import configureStore from './store/configureStore';
-import reducers from './reducers';
-import Root from './containers/root';
+import create from './redux/create';
+
+import App from './containers/app';
+import DevTools from './containers/devtools';
 
 require('./styles/base.scss');
 
-const store = configureStore(reducers, {});
+const store = create({});
 
-render(
-	<Root store={store} />,
-	document.getElementById('content')
-);
+if (process.env.NODE_ENV === 'production') {
+	render(
+		<Provider store={store}>
+			<div>
+				<App />
+			</div>
+		</Provider>,
+		document.getElementById('content')
+	);
+} else {
+	render(
+		<Provider store={store}>
+			<div>
+				<App />
+				<DevTools />
+			</div>
+		</Provider>,
+		document.getElementById('content')
+	);
+}
 

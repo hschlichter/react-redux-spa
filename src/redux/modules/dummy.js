@@ -1,8 +1,24 @@
-'use strict';
+const ADD_DATA = 'redux/dummy/ADD_DATA';
 
-export const ADD_DATA = 'DUMMY_ADD_DATA';
+const initialState = {
+	welcome: '',
+	articles: []
+};
 
-export function addData(json) {
+export default function reducer(state = initialState, action = {}) {
+	switch (action.type) {
+		case ADD_DATA:
+			return {
+				...state,
+				welcome: action.json.welcome,
+				articles: action.json.articles
+			};
+		default:
+			return state;
+	}
+}
+
+export function addData() {
 	return {
 		type: ADD_DATA,
 		json: {
@@ -34,3 +50,4 @@ export function addData(json) {
 		}
 	}
 }
+
