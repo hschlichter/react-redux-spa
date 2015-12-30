@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import DummyView from './dummyview';
+
 export default class App extends Component {
 	render() {
 		return (
 			<div>
 				<div className="container">
-					<p>Hello</p>
-					<p>World</p>
-					<p>Fubar</p>
+					<h1>Dummy App</h1>
+					<DummyView />
 				</div>
 			</div>
 		);
