@@ -1,8 +1,4 @@
-<img align="right" src="http://www.vectorjunky.com/gallery/j/JOCK%20STRAP.jpg" />
-
-# bettingexpert
-
-This is the repository for the front-end of the new `bettingexpert.com`. It's built on Node.js and React using the Redux pattern. It relies heavily on isomorphic principles of being able to render on both the client and server. The code is written in Javascript using the latest ES2015 standard.
+# React-Redux-SPA
 
 Make sure you have Node.js installed.
 
@@ -27,16 +23,13 @@ $ npm install -g grunt-cli
 $ npm install -g webpack
 
 # Run initial setup.
-$ npm install
+$ grunt
 ```
 
 ## Developing
 
 ```sh
-# Build javascript and CSS bundles, and listen to any incoming changes.
-$ webpack -w
-
-# Start server
+# Start webpack dev server
 $ npm start
 ```
 
