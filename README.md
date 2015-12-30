@@ -1,5 +1,7 @@
 # React-Redux-SPA
 
+[ ![Codeship Status for hschlichter/react-redux-spa](https://codeship.com/projects/10ae0a10-9126-0133-e6ac-02f6f3a4e3c7/status?branch=master)](https://codeship.com/projects/124530)
+
 This is a small sample app for setting up react, redux, webpack and dev-tools.
 
 Make sure you have Node.js installed.
