@@ -1,5 +1,7 @@
 # React-Redux-SPA
 
+This is a small sample app for setting up react, redux, webpack and dev-tools.
+
 Make sure you have Node.js installed.
 
 ```sh
@@ -11,7 +13,7 @@ If version is lower than v5.3, please upgrade. You can grab the latest stable ve
 
 https://nodejs.org/en/
 
-or install through your favorite pacakge manager.
+or install through your favorite package manager.
 
 ## Installation
 
