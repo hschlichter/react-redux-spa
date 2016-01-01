@@ -7,6 +7,9 @@ import DummySpinner from 'components/dummyspinner';
 import DummyAddDataButton from './dummyadddatabutton';
 import DummyAsyncAddDataButton from './dummyasyncadddatabutton';
 
+@connect(
+	state => ({ dummy: state.dummy })
+)
 export default class DummyView extends Component {
 	render() {
 		return (
@@ -28,10 +31,4 @@ export default class DummyView extends Component {
 		);
 	}
 }
-
-export default connect((state) => {
-	return {
-		dummy: state.dummy
-	};
-})(DummyView);
 

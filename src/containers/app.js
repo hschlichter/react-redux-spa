@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 
 import DummyView from './dummyview';
 
+@connect(
+	state => ({ dummy: state.dummy })
+)
 export default class App extends Component {
 	render() {
 		return (
@@ -15,10 +18,4 @@ export default class App extends Component {
 		);
 	}
 }
-
-export default connect((state) => {
-	return {
-		dummy: state.dummy
-	};
-})(App);
 
