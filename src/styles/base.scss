@@ -1,6 +1,6 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import url("http://css-spinners.com/css/spinner/throbber.css");
+@import "spinner.scss";
 
 body {
   padding-top: 60px;
@@ -13,4 +13,6 @@ button {
 .row {
 	margin-top: 10px;
 }
+
+
 
