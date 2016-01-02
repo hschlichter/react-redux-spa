@@ -11,7 +11,11 @@ var entry = {
 	],
 	vendor: [
 		'react', 
-		'react-dom'
+		'react-dom',
+		'redux',
+		'redux-thunk',
+		'react-redux',
+		'react-router'
 	]
 };
 
