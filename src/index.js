@@ -10,24 +10,13 @@ require('./styles/base.scss');
 
 const store = create({});
 
-if (process.env.NODE_ENV === 'production') {
-	render(
-		<Provider store={store}>
-			<div>
-				<App />
-			</div>
-		</Provider>,
-		document.getElementById('content')
-	);
-} else {
-	render(
-		<Provider store={store}>
-			<div>
-				<App />
-				<DevTools />
-			</div>
-		</Provider>,
-		document.getElementById('content')
-	);
-}
+render(
+	<Provider store={store}>
+		<div>
+			<App />
+			<DevTools />
+		</div>
+	</Provider>,
+	document.getElementById('content')
+);
 
