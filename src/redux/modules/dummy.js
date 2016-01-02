@@ -30,7 +30,7 @@ export function addData() {
 		type: ADD_DATA,
 		json: {
 			welcome: 'Fubar',
-			message: 'Hello World'
+			message: 'Hello World ' + Math.random()
 		}
 	}
 }
