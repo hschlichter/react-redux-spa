@@ -17,14 +17,21 @@ https://nodejs.org/en/
 
 or install through your favorite package manager.
 
-## Installation
+## Dependencies
 
 ```sh
 # Install grunt globally.
 $ npm install -g grunt-cli
 
 # Install webpack globally.
-$ npm install -g webpack
+$ npm install -g webpack webpack-dev-server
+````
+
+## Installation
+
+```sh
+# Install packages
+$ npm install
 
 # Run initial setup.
 $ grunt
@@ -33,7 +40,7 @@ $ grunt
 ## Developing
 
 ```sh
-# Start webpack dev server
+# Start webpack-dev-server
 $ npm start
 ```
 
