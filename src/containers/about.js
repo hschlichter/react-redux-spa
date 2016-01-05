@@ -9,8 +9,12 @@ export default class About extends Component {
 	render() {
 		return (
 			<div>
-				<Link to="/">home</Link>
-				<h3>Hello About</h3>
+				<div className="row">
+					<Link to="/">home</Link>
+				</div>
+				<div className="row">
+					<h3>Hello About</h3>
+				</div>
 			</div>
 		);
 	}

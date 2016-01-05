@@ -10,12 +10,13 @@ var entry = {
 		'./src/client.js'
 	],
 	vendor: [
-		'react', 
+		'react',
 		'react-dom',
 		'redux',
 		'redux-thunk',
 		'react-redux',
-		'react-router'
+		'react-router',
+		'foundation-sites'
 	]
 };
 
@@ -49,19 +50,22 @@ module.exports = [{
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		//new webpack.optimize.UglifyJsPlugin({
-		//	output: {
-		//		comments: false
-		//	},
-		//	sourceMap: true,
-		//	mangle: false
-		//}),
+		// new webpack.optimize.UglifyJsPlugin({
+		// 	output: {
+		// 		comments: false
+		// 	},
+		// 	sourceMap: true,
+		// 	mangle: false
+		// }),
 		new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
 		new ExtractTextPlugin('[name].bundle.css')
 	],
 	resolve: {
 		extensions: ['', '.js', '.jsx'],
 		root: [__dirname],
-		modulesDirectories: ['node_modules', './']
+		modulesDirectories: ['node_modules',  './']
+	},
+	sassLoader: {
+		includePaths: ['node_modules/foundation-sites/scss']
 	}
 }];

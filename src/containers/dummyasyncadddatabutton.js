@@ -15,7 +15,7 @@ export default class DummyAsyncAddDataButton extends Component {
 
 	render() {
 		return (
-			<button type="button" className="btn btn-success" onClick={this.handleClick.bind(this)}>Dummy Async Add Data</button>
+			<button type="button" className="button" onClick={this.handleClick.bind(this)}>Dummy Async Add Data</button>
 		);
 	}
 }

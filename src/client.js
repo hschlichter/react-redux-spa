@@ -7,7 +7,7 @@ import create from './redux/create';
 import routes from './routes.js';
 import DevTools from './containers/devtools';
 
-require('./styles/base.scss');
+require('./styles/main.scss');
 
 const history = createBrowserHistory();
 const store = create({});

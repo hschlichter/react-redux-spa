@@ -15,19 +15,19 @@ export default class Dummy extends Component {
 	render() {
 		return (
 			<div>
-				<Link to="/about">About</Link>
 				<div className="row">
-					<div className="col-md-12">
+					<Link to="/about">About</Link>
+				</div>
+				<div className="row">
+					<div className="column medium-12">
 						<DummyWelcome text={this.props.dummy.welcome} />
 						<DummyMessage text={this.props.dummy.message} />
 						<DummySpinner show={this.props.dummy.isFetching} />
 					</div>
 				</div>
 				<div className="row">
-					<div className="col-md-12">
-						<DummyAddDataButton />
-						<DummyAsyncAddDataButton />
-					</div>
+					<DummyAddDataButton />
+					<DummyAsyncAddDataButton />
 				</div>
 			</div>
 		);
